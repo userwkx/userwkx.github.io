@@ -1,0 +1,1959 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="keywords" content="静态个人博客">
+<meta name="description" content="个人笔记">
+<meta name="theme-color" content="#000">
+<title>wkx</title>
+<link rel="shortcut icon" href="/favicon.ico?v=1721643971992">
+<link rel="stylesheet" href="/media/css/pisces.css">
+<link rel="stylesheet" href="/media/fonts/font-awesome.css">
+<link
+  href="//fonts.loli.net/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Rosario:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext"
+  rel="stylesheet" type="text/css">
+
+<link href="/media/hljs/styles/default.css"
+  rel="stylesheet">
+
+<link rel="stylesheet" href="/styles/main.css">
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<script src="/media/js/jquery.js"></script>
+<script src="/media/hljs/highlight.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.ui.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css"
+  integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"
+  integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"
+  integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+  onload="renderMathInElement(document.body);"></script>
+
+
+
+
+
+
+</head>
+
+<body>
+  <div class="head-top-line"></div>
+  <div class="header-box">
+    
+<div class="pisces">
+  <header class="header  ">
+    <div class="blog-header box-shadow-wrapper bg-color " id="header">
+      <div class="nav-toggle" id="nav_toggle">
+        <div class="toggle-box">
+          <div class="line line-top"></div>
+          <div class="line line-center"></div>
+          <div class="line line-bottom"></div>
+        </div>
+      </div>
+      <div class="site-meta">       
+        <div class="site-title">
+          
+            <a href="/" class="brand">
+              <span>wkx</span>
+            </a>  
+          
+        </div>
+        
+          <p class="subtitle">点击返回主页^_^</p>
+        
+      </div>
+      <nav class="site-nav" id="site_nav">
+        <ul id="nav_ul">
+          
+            
+            
+            <li class="nav-item ">
+              
+              
+                <a href="https://userwkx.github.io" target="_self">
+                  <i class="fa fa-globe"></i> 主页
+                </a>
+              
+            </li>
+          
+            
+            
+            <li class="nav-item ">
+              
+              
+                <a href="https://userwkx.github.io/archives" target="_self">
+                  <i class="fa fa-archive"></i> 介绍
+                </a>
+              
+            </li>
+          
+            
+            
+            <li class="nav-item ">
+              
+              
+                <a href="https://www.yuque.com/lanhaha-pu6tv/ef07g9?#" target="_blank">
+                  <i class="fa fa-globe"></i> 传送门：os71
+                </a>
+              
+            </li>
+          
+            
+            
+            <li class="nav-item ">
+              
+              
+                <a href="https://wangkaixuan.top/tag/algorithm/" target="_self">
+                  <i class="fa fa-globe"></i> 算法
+                </a>
+              
+            </li>
+          
+            
+            
+            <li class="nav-item ">
+              
+              
+                <a href="https://wangkaixuan.top/tag/evering/" target="_self">
+                  <i class="fa fa-globe"></i> evering
+                </a>
+              
+            </li>
+          
+          
+          
+            <li id="fa_search" class="nav-item">
+              <a href="javascript:void(0);">
+                <i class="fa fa-search"></i> <span class="language" data-lan="search">搜索</span>
+              </a>
+            </li>
+          
+        </ul>
+      </nav>
+    </div>
+  </header>
+</div>
+
+<script type="text/javascript"> 
+ 
+  let showNav = true;
+
+  let navToggle = document.querySelector('#nav_toggle'),
+  siteNav = document.querySelector('#site_nav');
+  
+  function navClick() {
+    let sideBar = document.querySelector('.sidebar');
+    let navUl = document.querySelector('#nav_ul');
+    navToggle.classList.toggle('nav-toggle-active');
+    siteNav.classList.toggle('nav-menu-active');
+    if (siteNav.classList.contains('nav-menu-active')) {
+      siteNav.style = "height: " + (navUl.children.length * 42) +"px !important";
+    } else {
+      siteNav.style = "";
+    }
+  }
+
+  navToggle.addEventListener('click',navClick);  
+</script>
+  </div>
+  <div class="main-continer">
+    
+    <div
+      class="section-layout  pisces">
+      <div class="section-layout-wrapper">
+        <div id="sidebarMeta" class="sidebar">
+    
+<div class="sidebar-wrapper box-shadow-wrapper bg-color">
+  <div class="sidebar-item">
+    <img class="site-author-image right-motion" src="/images/avatar.png"/>
+    <p class="site-author-name">wkx</p>
+    
+    <div class="site-description right-motion">
+      
+        <p id="binft">个人笔记^</p>
+      
+    </div>
+    
+  </div>
+  <div class="sidebar-item side-item-stat right-motion">
+    <div class="sidebar-item-box">
+      <a href="/archives/">
+        
+        <span class="site-item-stat-count">3</span>
+        <span class="site-item-stat-name language" data-lan="article">文章</span>
+      </a>
+    </div>
+    <div class="sidebar-item-box">
+      <a href="/tags/">
+        <span class="site-item-stat-count">2</span>
+        <span class="site-item-stat-name language" data-lan="tag">标签</span>
+      </a>
+    </div>
+  </div>
+  
+    
+      <div class="sidebar-item">
+        <span class="site-item-rss">
+            <i class="fa fa-rss"></i>
+            <a href="https://userwkx.github.io/atom.xml" target="_blank">RSS</a>
+        </span>
+      </div>
+    
+  
+  
+
+  
+
+
+
+</div>
+</div>
+<script>
+  let sidebarMeta = document.querySelector('#sidebarMeta');
+  let scheme = 'pisces';
+  let sidebarWrapper = document.querySelector('.sidebar-wrapper');
+  if (sidebarMeta && (scheme === 'pisces' || scheme === 'gemini')) {
+    document.addEventListener('scroll', function(e) {
+      if (document.scrollingElement.scrollTop > parseInt(sidebarMeta.style.marginTop) + 10) {
+        sidebarWrapper.classList.add('home-sidebar-fixed')
+      } else {
+        sidebarWrapper.classList.remove('home-sidebar-fixed')
+      }
+    });
+  }
+  </script>
+        <div class="section-box box-shadow-wrapper">
+          <section class="section tags-section bg-color posts-expand">
+            <div class="tags-box">
+  <div class="tag-cloud-title language" data-lan="cloud-tags" data-count="2">
+    非常好！目前共计 2 个标签，继续努力！
+  </div>
+  <div class="tag-cloud-list" id="tags">
+    
+      
+      
+        
+      
+        
+          
+            
+      
+        
+          
+        
+      
+      <a class="cloud-tag" href="https://userwkx.github.io/tag/evering/" rel="1">evering</a>
+    
+      
+      
+        
+      
+        
+          
+        
+      
+        
+          
+            
+      
+      <a class="cloud-tag" href="https://userwkx.github.io/tag/algorithm/" rel="1">算法</a>
+    
+  </div>
+</div>
+<script>
+
+  let fontStart = 12, fontEnd = 30, colorStart = '#666', colorEnd = '#000';
+  let tags = document.querySelector('#tags').children;
+  let counts = [];
+  for(let i = 0; i < tags.length; i++) {
+    counts.push(tags[i].rel);
+  }
+  let lowest = Math.min.apply(null,counts), highest = Math.max.apply(null,counts);;
+  let range = highest - lowest;
+  if (range === 0) {
+    range = 1;
+  }
+  let fontIncr, colorIncr;
+  fontIncr = (fontEnd - fontStart) / range;
+  
+  let sColorArr = toRGB(colorStart), eColorArr = toRGB(colorEnd);
+
+  for(let i = 0; i < tags.length; i++) {
+    let disCount = tags[i].rel - lowest;
+    let fontSize = fontStart + disCount * fontIncr;
+    let style = 'font-size: ' + fontSize + 'px;';
+    let arr = [];
+    for(let c = 0; c < sColorArr.length; c++) {
+      if (disCount === 0) {
+        disCount = 1;
+      }
+      let val = (sColorArr[c] - eColorArr[c]) / range * disCount;
+      if (val >= 100) {
+        val = eColorArr[c];
+      } else if (val <= 0) {
+        val = sColorArr[c];
+      }
+      arr[c] = Math.floor(val);
+    }
+    style += 'color: ' + toHex(arr);
+    tags[i].style = style;
+  }
+
+  function toRGB(code) {
+    if (code.length === 4) {
+      code = code.replace(/(\w)(\w)(\w)/gi, "\$1\$1\$2\$2\$3\$3");
+    }
+    var hex = /(\w{2})(\w{2})(\w{2})/.exec(code);
+    return [parseInt(hex[1], 16), parseInt(hex[2], 16), parseInt(hex[3], 16)];
+  }
+
+  function toHex(ary) {
+    return "#" + ((1 << 24) + (ary[0] << 16) + (ary[1] << 8) + ary[2]).toString(16).slice(1);
+  }
+
+</script>
+          </section>
+        </div>
+      </div>
+    </div>
+    <div class="footer-box">
+  <footer class="footer">
+    <center id="runTimeBox">
+      已运行:<span id="run_time"></span>
+    </center>
+    <span id="busuanzi_container_site_pv">浏览数:<span id="busuanzi_value_site_pv"></span> 次</span>
+    <span class="post-meta-divider">|</span>
+    <span id="busuanzi_container_site_uv">访客数:<span id="busuanzi_value_site_uv"></span> 人</span>
+
+    <script>
+      BirthDay = new Date('');
+      if (BirthDay.getTime()) {
+        function runTime() {
+          str = "";
+          today = new Date();
+          timeold = today.getTime() - BirthDay.getTime();
+          msPerDay = 24 * 60 * 60 * 1000;
+          e_daysold = timeold / msPerDay;
+          daysold = Math.floor(e_daysold);
+          str += daysold + "天";
+          return str;
+        }
+        setInterval(function () {
+          $("#run_time").html(runTime());
+        }, 1000);
+      } else {
+        document.querySelector('.footer').removeChild(document.querySelector('#runTimeBox'));
+      }
+    </script>
+    <div class="poweredby">
+      
+    </div>
+  </footer>
+  
+    
+        <div class="pisces back-to-top" id="back_to_top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span class="scrollpercent"> <span id="back_to_top_text">0</span>% </span>
+            
+        </div>
+        
+                  
+                    
+<link rel="stylesheet" href="/media/live2d/css/live2d.css" />
+<div class="box-scale">
+  <div id="landlord" style="left: 5px;bottom: px;"
+    data-key="8b2ff7e4eb69e782b3ab960b05dc382a">
+    <canvas id="live2d" width="500" height="560" class="live2d"></canvas>
+    
+
+      <div class="message" style="opacity:0"></div>
+      <div class="live_talk_input_body">
+        <div class="live_talk_input_name_body">
+          <input name="name" type="text" class="live_talk_name white_input" id="AIuserName" autocomplete="off"
+            placeholder="你的名字" />
+        </div>
+        <div class="live_talk_input_text_body">
+          <input name="talk" type="text" class="live_talk_talk white_input" id="AIuserText" autocomplete="off"
+            placeholder="要和我聊什么呀？" />
+          <button type="button" class="live_talk_send_btn" id="talk_send">发送</button>
+        </div>
+      </div>
+      <input name="live_talk" id="live_talk" value="1" type="hidden" />
+      <div class="live_ico_box">
+        <div class="live_ico_item type_info" id="showInfoBtn"></div>
+        <div class="live_ico_item type_talk" id="showTalkBtn"></div>
+        
+        <div class="live_ico_item type_youdu" id="youduButton"></div>
+        <div class="live_ico_item type_quit" id="hideButton"></div>
+        <input name="live_statu_val" id="live_statu_val" value="0" type="hidden" />
+        <audio src="" style="display:none;" id="live2d_bgm" data-bgm="0" preload="none"></audio>
+        <input id="duType" value="douqilai" type="hidden">
+        
+      </div>
+    
+  </div>
+</div>
+<div id="open_live2d">召唤看板娘</div>
+<script>
+  var message_Path = 'https://cdn.jsdelivr.net/gh/hsxyhao/live2d.github.io@master/';
+  let landlord = document.querySelector('#landlord');
+  var apiKey = landlord.dataset.key;
+</script>
+<script type="text/javascript" src="/media/live2d/js/live2d.js"></script>
+<script>
+	var home_Path = document.location.protocol + '//' + window.document.location.hostname + ":" + window.document.location.port + '/';
+	var userAgent = window.navigator.userAgent.toLowerCase();
+	var norunAI = ["android", "iphone", "ipod", "ipad", "windows phone", "mqqbrowser", "msie", "trident/7.0"];
+	var norunFlag = false;
+
+	for (var i = 0; i < norunAI.length; i++) {
+		if (userAgent.indexOf(norunAI[i]) > -1) {
+			norunFlag = true;
+			break;
+		}
+	}
+
+	if (!window.WebGLRenderingContext) {
+		norunFlag = true;
+	}
+
+	if (!norunFlag) {
+		var hitFlag = false;
+		var AIFadeFlag = false;
+		var liveTlakTimer = null;
+		var sleepTimer_ = null;
+		var AITalkFlag = false;
+		var talkNum = 0;
+		(function () {
+			function renderTip(template, context) {
+				var tokenReg = /(\\)?\{([^\{\}\\]+)(\\)?\}/g;
+				return template.replace(tokenReg, function (word, slash1, token, slash2) {
+					if (slash1 || slash2) {
+						return word.replace('\\', '');
+					}
+					var variables = token.replace(/\s/g, '').split('.');
+					var currentObject = context;
+					var i, length, variable;
+					for (i = 0, length = variables.length; i < length; ++i) {
+						variable = variables[i];
+						currentObject = currentObject[variable];
+						if (currentObject === undefined || currentObject === null) return '';
+					}
+					return currentObject;
+				});
+			}
+
+			String.prototype.renderTip = function (context) {
+				return renderTip(this, context);
+			};
+
+			var re = /x/;
+			re.toString = function () {
+				showMessage('哈哈，你打开了控制台，是想要看看我的秘密吗？', 5000);
+				return '';
+			};
+
+			$(document).on('copy', function () {
+				showMessage('你都复制了些什么呀，转载要记得加上出处哦~~', 5000);
+			});
+
+			function initTips() {
+				$.ajax({
+					cache: true,
+					url: message_Path + 'message.json',
+					dataType: "json",
+					success: function (result) {
+						$.each(result.mouseover, function (index, tips) {
+							$(tips.selector).mouseover(function () {
+								var text = tips.text;
+								if (Array.isArray(tips.text)) text = tips.text[Math.floor(Math.random() * tips.text.length + 1) - 1];
+								text = text.renderTip({ text: $(this).text() });
+								showMessage(text, 3000);
+								talkValTimer();
+								clearInterval(liveTlakTimer);
+								liveTlakTimer = null;
+							});
+							$(tips.selector).mouseout(function () {
+								showHitokoto();
+								if (liveTlakTimer == null) {
+									liveTlakTimer = window.setInterval(function () {
+										showHitokoto();
+									}, 15000);
+								};
+							});
+						});
+						$.each(result.click, function (index, tips) {
+							$(tips.selector).click(function () {
+								if (hitFlag) {
+									return false
+								}
+								hitFlag = true;
+								setTimeout(function () {
+									hitFlag = false;
+								}, 8000);
+								var text = tips.text;
+								if (Array.isArray(tips.text)) text = tips.text[Math.floor(Math.random() * tips.text.length + 1) - 1];
+								text = text.renderTip({ text: $(this).text() });
+								showMessage(text, 3000);
+							});
+							clearInterval(liveTlakTimer);
+							liveTlakTimer = null;
+							if (liveTlakTimer == null) {
+								liveTlakTimer = window.setInterval(function () {
+									showHitokoto();
+								}, 15000);
+							};
+						});
+					}
+				});
+			}
+			initTips();
+
+			var text;
+			if (document.referrer !== '') {
+				var referrer = document.createElement('a');
+				referrer.href = document.referrer;
+				text = '嗨！来自 <span style="color:#0099cc;">' + referrer.hostname + '</span> 的朋友！';
+				var domain = referrer.hostname.split('.')[1];
+				if (domain == 'baidu') {
+					text = '嗨！ 来自 百度搜索 的朋友！<br>欢迎访问<span style="color:#0099cc;">「 ' + document.title.split(' - ')[0] + ' 」</span>';
+				} else if (domain == 'so') {
+					text = '嗨！ 来自 360搜索 的朋友！<br>欢迎访问<span style="color:#0099cc;">「 ' + document.title.split(' - ')[0] + ' 」</span>';
+				} else if (domain == 'google') {
+					text = '嗨！ 来自 谷歌搜索 的朋友！<br>欢迎访问<span style="color:#0099cc;">「 ' + document.title.split(' - ')[0] + ' 」</span>';
+				}
+			} else {
+				if (window.location.href == home_Path) { //主页URL判断，需要斜杠结尾
+					var now = (new Date()).getHours();
+					if (now > 23 || now <= 5) {
+						text = '你是夜猫子呀？这么晚还不睡觉，明天起的来嘛？';
+					} else if (now > 5 && now <= 7) {
+						text = '早上好！一日之计在于晨，美好的一天就要开始了！';
+					} else if (now > 7 && now <= 11) {
+						text = '上午好！工作顺利嘛，不要久坐，多起来走动走动哦！';
+					} else if (now > 11 && now <= 14) {
+						text = '中午了，工作了一个上午，现在是午餐时间！';
+					} else if (now > 14 && now <= 17) {
+						text = '午后很容易犯困呢，今天的运动目标完成了吗？';
+					} else if (now > 17 && now <= 19) {
+						text = '傍晚了！窗外夕阳的景色很美丽呢，最美不过夕阳红~~';
+					} else if (now > 19 && now <= 21) {
+						text = '晚上好，今天过得怎么样？';
+					} else if (now > 21 && now <= 23) {
+						text = '已经这么晚了呀，早点休息吧，晚安~~';
+					} else {
+						text = '嗨~ 快来逗我玩吧！';
+					}
+				} else {
+					text = '欢迎阅读<span style="color:#0099cc;">「 ' + document.title.split(' - ')[0] + ' 」</span>';
+				}
+			}
+			showMessage(text, 12000);
+		})();
+
+		liveTlakTimer = setInterval(function () {
+			showHitokoto();
+		}, 15000);
+
+		function showHitokoto() {
+			if (sessionStorage.getItem("Sleepy") !== "1") {
+				if (!AITalkFlag) {
+					$.getJSON('https://v1.hitokoto.cn/', function (result) {
+						talkValTimer();
+						showMessage(result.hitokoto, 0);
+					});
+				}
+			} else {
+				hideMessage(0);
+				if (sleepTimer_ == null) {
+					sleepTimer_ = setInterval(function () {
+						checkSleep();
+					}, 200);
+				}
+			}
+		}
+
+		function checkSleep() {
+			var sleepStatu = sessionStorage.getItem("Sleepy");
+			if (sleepStatu !== '1') {
+				talkValTimer();
+				showMessage('你回来啦~', 0);
+				clearInterval(sleepTimer_);
+				sleepTimer_ = null;
+			}
+		}
+
+		function showMessage(text, timeout) {
+			if (Array.isArray(text)) text = text[Math.floor(Math.random() * text.length + 1) - 1];
+			$('.message').stop();
+			$('.message').html(text);
+			$('.message').fadeTo(200, 1);
+			//if (timeout === null) timeout = 5000;
+			//hideMessage(timeout);
+		}
+		function talkValTimer() {
+			$('#live_talk').val('1');
+		}
+
+		function hideMessage(timeout) {
+			//$('.message').stop().css('opacity',1);
+			if (timeout === null) timeout = 5000;
+			$('.message').delay(timeout).fadeTo(200, 0);
+		}
+
+		function initLive2d() {
+			$('#hideButton').on('click', function () {
+				if (AIFadeFlag) {
+					return false;
+				} else {
+					AIFadeFlag = true;
+					localStorage.setItem("live2dhidden", "0");
+					$('#landlord').fadeOut(200);
+					$('#open_live2d').delay(200).fadeIn(200);
+					setTimeout(function () {
+						AIFadeFlag = false;
+					}, 300);
+				}
+			});
+			$('#open_live2d').on('click', function () {
+				if (AIFadeFlag) {
+					return false;
+				} else {
+					AIFadeFlag = true;
+					localStorage.setItem("live2dhidden", "1");
+					$('#open_live2d').fadeOut(200);
+					$('#landlord').delay(200).fadeIn(200);
+					setTimeout(function () {
+						AIFadeFlag = false;
+					}, 300);
+				}
+			});
+			$('#youduButton').on('click', function () {
+				if ($('#youduButton').hasClass('doudong')) {
+					var typeIs = $('#youduButton').attr('data-type');
+					$('#youduButton').removeClass('doudong');
+					$('body').removeClass(typeIs);
+					$('#youduButton').attr('data-type', '');
+				} else {
+					var duType = $('#duType').val();
+					var duArr = duType.split(",");
+					var dataType = duArr[Math.floor(Math.random() * duArr.length)];
+
+					$('#youduButton').addClass('doudong');
+					$('#youduButton').attr('data-type', dataType);
+					$('body').addClass(dataType);
+				}
+			});
+			if (apiKey) {
+				$('#showInfoBtn').on('click', function () {
+					var live_statu = $('#live_statu_val').val();
+					if (live_statu == "0") {
+						return
+					} else {
+						$('#live_statu_val').val("0");
+						$('.live_talk_input_body').fadeOut(500);
+						AITalkFlag = false;
+						showHitokoto();
+						$('#showTalkBtn').show();
+						$('#showInfoBtn').hide();
+					}
+				});
+				$('#showTalkBtn').on('click', function () {
+					var live_statu = $('#live_statu_val').val();
+					if (live_statu == "1") {
+						return
+					} else {
+						$('#live_statu_val').val("1");
+						$('.live_talk_input_body').fadeIn(500);
+						AITalkFlag = true;
+						$('#showTalkBtn').hide();
+						$('#showInfoBtn').show();
+
+					}
+				});
+				$('#talk_send').on('click', function () {
+					var info_ = $('#AIuserText').val();
+					var userid_ = $('#AIuserName').val();
+					if (info_ == "") {
+						showMessage('写点什么吧！', 0);
+						return;
+					}
+					if (userid_ == "") {
+						showMessage('聊之前请告诉我你的名字吧！', 0);
+						return;
+					}
+					showMessage('思考中~', 0);
+					let protocol = window.location.protocol.indexOf("s") > 0 ? "https" : "http";
+					$.ajax({
+						type: "get",
+						url: `${protocol}://www.tuling123.com/openapi/api?key=${apiKey}&info=${info_}`,
+						dataType: "json",
+						success: function (res) {
+							talkValTimer();
+							showMessage(res.text, 0);
+							$('#AIuserText').val("");
+							sessionStorage.setItem("live2duser", userid_);
+						},
+						error: function (e) {
+							talkValTimer();
+							showMessage('似乎有什么错误，请和站长联系！', 0);
+						}
+					});
+				});
+			} else {
+				$('#showInfoBtn').hide();
+				$('#showTalkBtn').hide();
+			}
+			//获取音乐信息初始化
+			var bgmListInfo = $('input[name=live2dBGM]');
+			if (bgmListInfo.length == 0) {
+				$('#musicButton').hide();
+			} else {
+				var bgmPlayNow = parseInt($('#live2d_bgm').attr('data-bgm'));
+				var bgmPlayTime = 0;
+				var live2dBGM_Num = sessionStorage.getItem("live2dBGM_Num");
+				var live2dBGM_PlayTime = sessionStorage.getItem("live2dBGM_PlayTime");
+				if (live2dBGM_Num) {
+					if (live2dBGM_Num <= $('input[name=live2dBGM]').length - 1) {
+						bgmPlayNow = parseInt(live2dBGM_Num);
+					}
+				}
+				if (live2dBGM_PlayTime) {
+					bgmPlayTime = parseInt(live2dBGM_PlayTime);
+				}
+				var live2dBGMSrc = bgmListInfo.eq(bgmPlayNow).val();
+				$('#live2d_bgm').attr('data-bgm', bgmPlayNow);
+				$('#live2d_bgm').attr('src', live2dBGMSrc);
+				$('#live2d_bgm')[0].currentTime = bgmPlayTime;
+				$('#live2d_bgm')[0].volume = 0.5;
+				var live2dBGM_IsPlay = sessionStorage.getItem("live2dBGM_IsPlay");
+				var live2dBGM_WindowClose = sessionStorage.getItem("live2dBGM_WindowClose");
+				if (live2dBGM_IsPlay == '0' && live2dBGM_WindowClose == '0') {
+					$('#live2d_bgm')[0].play();
+					$('#musicButton').addClass('play');
+				}
+				sessionStorage.setItem("live2dBGM_WindowClose", '1');
+				$('#musicButton').on('click', function () {
+					if ($('#musicButton').hasClass('play')) {
+						$('#live2d_bgm')[0].pause();
+						$('#musicButton').removeClass('play');
+						sessionStorage.setItem("live2dBGM_IsPlay", '1');
+					} else {
+						$('#live2d_bgm')[0].play();
+						$('#musicButton').addClass('play');
+						sessionStorage.setItem("live2dBGM_IsPlay", '0');
+					}
+				});
+				window.onbeforeunload = function () {
+					sessionStorage.setItem("live2dBGM_WindowClose", '0');
+					if ($('#musicButton').hasClass('play')) {
+						sessionStorage.setItem("live2dBGM_IsPlay", '0');
+					}
+				}
+				document.getElementById('live2d_bgm').addEventListener("timeupdate", function () {
+					var live2dBgmPlayTimeNow = document.getElementById('live2d_bgm').currentTime;
+					sessionStorage.setItem("live2dBGM_PlayTime", live2dBgmPlayTimeNow);
+				});
+				document.getElementById('live2d_bgm').addEventListener("ended", function () {
+					var listNow = parseInt($('#live2d_bgm').attr('data-bgm'));
+					listNow++;
+					if (listNow > $('input[name=live2dBGM]').length - 1) {
+						listNow = 0;
+					}
+					var listNewSrc = $('input[name=live2dBGM]').eq(listNow).val();
+					sessionStorage.setItem("live2dBGM_Num", listNow);
+					$('#live2d_bgm').attr('src', listNewSrc);
+					$('#live2d_bgm')[0].play();
+					$('#live2d_bgm').attr('data-bgm', listNow);
+				});
+				document.getElementById('live2d_bgm').addEventListener("error", function () {
+					$('#live2d_bgm')[0].pause();
+					$('#musicButton').removeClass('play');
+					showMessage('音乐似乎加载不出来了呢！', 0);
+				});
+			}
+			//获取用户名
+			var live2dUser = sessionStorage.getItem("live2duser");
+			if (live2dUser !== null) {
+				$('#AIuserName').val(live2dUser);
+			}
+			//获取位置
+			var landL = sessionStorage.getItem("historywidth");
+			var landB = sessionStorage.getItem("historyheight");
+			if (landL == null || landB == null) {
+				landL = '5px'
+				landB = '0px'
+			}
+			$('#landlord').css('left', landL + 'px');
+			$('#landlord').css('bottom', landB + 'px');
+			//移动
+			function getEvent() {
+				return window.event || arguments.callee.caller.arguments[0];
+			}
+			var smcc = document.getElementById("landlord");
+			var moveX = 0;
+			var moveY = 0;
+			var moveBottom = 0;
+			var moveLeft = 0;
+			var moveable = false;
+			var docMouseMoveEvent = document.onmousemove;
+			var docMouseUpEvent = document.onmouseup;
+			smcc.onmousedown = function () {
+				var ent = getEvent();
+				moveable = true;
+				moveX = ent.clientX;
+				moveY = ent.clientY;
+				var obj = smcc;
+				moveBottom = parseInt(obj.style.bottom);
+				moveLeft = parseInt(obj.style.left);
+				if (isFirefox = navigator.userAgent.indexOf("Firefox") > 0) {
+					window.getSelection().removeAllRanges();
+				}
+				document.onmousemove = function () {
+					if (moveable) {
+						var ent = getEvent();
+						var x = moveLeft + ent.clientX - moveX;
+						var y = moveBottom + (moveY - ent.clientY);
+						obj.style.left = x + "px";
+						obj.style.bottom = y + "px";
+					}
+				};
+				document.onmouseup = function () {
+					if (moveable) {
+						var historywidth = obj.style.left;
+						var historyheight = obj.style.bottom;
+						historywidth = historywidth.replace('px', '');
+						historyheight = historyheight.replace('px', '');
+						sessionStorage.setItem("historywidth", historywidth);
+						sessionStorage.setItem("historyheight", historyheight);
+						document.onmousemove = docMouseMoveEvent;
+						document.onmouseup = docMouseUpEvent;
+						moveable = false;
+						moveX = 0;
+						moveY = 0;
+						moveBottom = 0;
+						moveLeft = 0;
+					}
+				};
+			};
+		}
+		$(document).ready(function () {
+			var AIimgSrc = [];
+			let chooseLive2d = 'histoire'
+			if (chooseLive2d === 'histoire') {
+				AIimgSrc.push(message_Path + "model/histoire/histoire.1024/texture_00.png");
+				AIimgSrc.push(message_Path + "model/histoire/histoire.1024/texture_01.png");
+				AIimgSrc.push(message_Path + "model/histoire/histoire.1024/texture_02.png");
+				AIimgSrc.push(message_Path + "model/histoire/histoire.1024/texture_03.png");
+			} else if (chooseLive2d === 'rem') {
+				AIimgSrc.push(message_Path + "model/rem/remu2048/texture_00.png");
+			} else if (chooseLive2d === 'aoba') {
+				AIimgSrc.push(message_Path + "model/aoba/textures/texture_00.png");
+			} else if (chooseLive2d === 'hijiki') {
+				AIimgSrc.push(message_Path + "model/hijiki/moc/hijiki.2048/texture_00.png");
+			} else if (chooseLive2d === 'tororo') {
+				AIimgSrc.push(message_Path + "model/tororo/moc/tororo.2048/texture_00.png");
+			}
+			var images = [];
+			var imgLength = AIimgSrc.length;
+			var loadingNum = 0;
+			for (var i = 0; i < imgLength; i++) {
+				images[i] = new Image();
+				images[i].src = AIimgSrc[i];
+				images[i].onload = function () {
+					loadingNum++;
+					if (loadingNum === imgLength) {
+						var live2dhidden = localStorage.getItem("live2dhidden");
+						if (live2dhidden === "0") {
+							setTimeout(function () {
+								$('#open_live2d').fadeIn(200);
+							}, 1300);
+						} else {
+							setTimeout(function () {
+								$('#landlord').fadeIn(200);
+							}, 1300);
+						}
+						let model = '';
+						if (chooseLive2d === 'histoire') {
+							model = message_Path + "model/histoire/model.json";
+						} else if (chooseLive2d === 'rem') {
+							model = message_Path + "model/rem/model.json";
+						} else if (chooseLive2d === 'aoba') {
+							model = message_Path + "model/aoba/model.json";
+						} else if (chooseLive2d === 'hijiki') {
+							model = message_Path + "model/hijiki/hijiki.model.json";
+						} else if (chooseLive2d === 'tororo') {
+							model = message_Path + "model/tororo/tororo.model.json";
+						}
+						setTimeout(function () {
+							loadlive2d("live2d", model);
+						}, 1000);
+						initLive2d();
+						images = null;
+					}
+				}
+			}
+		});
+	}
+</script>
+                      
+                        
+</div>
+<script>
+  let sideBarOpen = "sidebar-open";
+  let body = document.body;
+  let back2Top = document.querySelector("#back_to_top"),
+    back2TopText = document.querySelector("#back_to_top_text"),
+    drawerBox = document.querySelector("#drawer_box"),
+    rightSideBar = document.querySelector(".sidebar"),
+    viewport = document.querySelector("body");
+
+  function scrollAnimation(currentY, targetY) {
+    let needScrollTop = targetY - currentY;
+    let _currentY = currentY;
+    setTimeout(() => {
+      const dist = Math.ceil(needScrollTop / 10);
+      _currentY += dist;
+      window.scrollTo(_currentY, currentY);
+      if (needScrollTop > 10 || needScrollTop < -10) {
+        scrollAnimation(_currentY, targetY);
+      } else {
+        window.scrollTo(_currentY, targetY);
+      }
+    }, 1);
+  }
+
+  back2Top.addEventListener("click", function (e) {
+    scrollAnimation(document.scrollingElement.scrollTop, 0);
+    e.stopPropagation();
+    return false;
+  });
+
+  window.addEventListener("scroll", function (e) {
+    let percent =
+      (document.scrollingElement.scrollTop /
+        (document.scrollingElement.scrollHeight -
+          document.scrollingElement.clientHeight)) *
+      100;
+    if (percent > 1 && !back2Top.classList.contains("back-top-active")) {
+      back2Top.classList.add("back-top-active");
+    }
+    if (percent == 0) {
+      back2Top.classList.remove("back-top-active");
+    }
+    if (back2TopText) {
+      back2TopText.textContent = Math.floor(percent);
+    }
+  });
+
+  let hasCacu = false;
+  window.addEventListener("resize", function (e) {
+    calcuHeight();
+  });
+
+  function calcuHeight() {
+    // 动态调整站点概览高度
+    if (
+      (!hasCacu && back2Top.classList.contains("pisces")) ||
+      back2Top.classList.contains("gemini")
+    ) {
+      let sideBar = document.querySelector(".sidebar");
+      let navUl = document.querySelector("#site_nav");
+      sideBar.style =
+        "margin-top:" + (navUl.offsetHeight + navUl.offsetTop + 15) + "px;";
+      hasCacu = true;
+    }
+  }
+  calcuHeight();
+
+  let open = false,
+    MOTION_TIME = 300,
+    RIGHT_MOVE_DIS = "320px";
+
+  if (drawerBox) {
+    let rightMotions = document.querySelectorAll(".right-motion");
+    let right = drawerBox.classList.contains("right");
+
+    let transitionDir = right
+      ? "transition.slideRightIn"
+      : "transition.slideLeftIn";
+
+    let openProp, closeProp;
+    if (right) {
+      openProp = {
+        paddingRight: RIGHT_MOVE_DIS,
+      };
+      closeProp = {
+        paddingRight: "0px",
+      };
+    } else {
+      openProp = {
+        paddingLeft: RIGHT_MOVE_DIS,
+      };
+      closeProp = {
+        paddingLeft: "0px",
+      };
+    }
+
+    drawerBox.onclick = function () {
+      open = !open;
+      jQuery.Velocity(rightSideBar, "stop");
+      jQuery.Velocity(viewport, "stop");
+      jQuery.Velocity(rightMotions, "stop");
+      if (open) {
+        jQuery.Velocity(
+          rightSideBar,
+          {
+            width: RIGHT_MOVE_DIS,
+          },
+          {
+            duration: MOTION_TIME,
+            begin: function () {
+              jQuery.Velocity(rightMotions, transitionDir, {});
+            },
+          }
+        );
+        jQuery.Velocity(viewport, openProp, {
+          duration: MOTION_TIME,
+        });
+      } else {
+        jQuery.Velocity(
+          rightSideBar,
+          {
+            width: "0px",
+          },
+          {
+            duration: MOTION_TIME,
+            begin: function () {
+              jQuery.Velocity(rightMotions, {
+                opacity: 0,
+              });
+            },
+          }
+        );
+        jQuery.Velocity(viewport, closeProp, {
+          duration: MOTION_TIME,
+        });
+      }
+      for (let i = 0; i < drawerBox.children.length; i++) {
+        drawerBox.children[i].classList.toggle("muse-line");
+      }
+      drawerBox.classList.toggle(sideBarOpen);
+    };
+  }
+
+  // 链接跳转
+  let newWindow = "true";
+  if (newWindow === "true") {
+    let links = document.querySelectorAll(".post-body a");
+    links.forEach((item) => {
+      if (!item.classList.contains("btn")) {
+        item.setAttribute("target", "_blank");
+      }
+    });
+  }
+
+  let faSearch = document.querySelector("#fa_search");
+  faSearch &&
+    faSearch.addEventListener("click", function () {
+      document.querySelector("#search_mask").style = "";
+    });
+
+  // 代码高亮
+  hljs.initHighlightingOnLoad();
+
+  // 离开当前页title变化
+  var leaveTitle = "拜拜~";
+  var normal_title = document.title;
+  if (leaveTitle) {
+    document.addEventListener("visibilitychange", function () {
+      if (document.visibilityState == "hidden") {
+        normal_title = document.title;
+        document.title = leaveTitle;
+      } else {
+        document.title = normal_title;
+      }
+    });
+  }
+</script>
+
+<link rel="stylesheet" href="/media/css/jquery.fancybox.css" />
+<script src="/media/js/jquery.fancybox.js"></script>
+
+<script>
+  let images = document.querySelectorAll(".section img");
+  images.forEach((image) => {
+    var parent = image.parentElement;
+    var next = image.nextElementSibling;
+    parent.removeChild(image);
+    var aelem = document.createElement("a");
+    aelem.href = image.src;
+    aelem.dataset["fancybox"] = "images";
+    aelem.dataset["rel"] = "fancybox-button";
+    aelem.classList.add("fancybox");
+    aelem.appendChild(image);
+    parent.insertBefore(aelem, next);
+  });
+</script>
+  </div>
+</body>
+
+  <div class="search-mask" id="search_mask" style="display: none;">
+  <div class="search-box">
+    <div class="search-title">
+      <i class="fa fa-search"></i>
+      <div class="input-box">
+        <input id="search" type="text" class="language" data-lan="search" placeholder="搜索">
+      </div>
+      <i id="close" class="fa fa-times-circle"></i>
+    </div>
+    <div class="stat-box">
+      <span id="stat_count">0</span><span class="language" data-lan="stat">条相关条目，使用了</span><span id="stat_times">0</span><span class="language" data-lan="stat-time">毫秒</span>
+      <hr>
+    </div>
+    <div class="result" id="result">
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://userwkx.github.io/post/string-lei/"" data-c="
+          &lt;h2 id=&#34;string的构造函数的形式&#34;&gt;&lt;strong&gt;string的构造函数的形式：&lt;/strong&gt;&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;string str：生成空字符串&lt;br&gt;
+string s(str)：生成字符串为str的复制品&lt;br&gt;
+string s(str, strbegin,strlen)：将字符串str中从下标strbegin开始、长度为strlen的部分作为字符串初值&lt;br&gt;
+string s(cstr, char_len)：以C_string类型cstr的前char_len个字符串作为字符串s的初值&lt;br&gt;
+string s(num ,c)：生成num个c字符的字符串&lt;br&gt;
+string s(str, stridx)：将字符串str中从下标stridx开始到字符串结束的位置作为字符串初值&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;字符串的比较&#34;&gt;&lt;strong&gt;字符串的比较：&lt;/strong&gt;&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;C ++字符串&lt;strong&gt;支持常见的比较操作符&lt;/strong&gt;（&amp;gt;,&amp;gt;=,&amp;lt;,&amp;lt;=,==,!=），&lt;strong&gt;甚至支持string与C-string的比较(如 str&amp;lt;”hello”)。&lt;/strong&gt;&lt;br&gt;
+在使用&amp;gt;,&amp;gt;=,&amp;lt;,&amp;lt;=这些操作符的时候是根据“当前字符特性”将字符按&lt;strong&gt;字典顺序&lt;/strong&gt;进行逐一比较。字典排序靠前的字符小。&lt;br&gt;
+比较的顺序是从前向后比较，遇到不相等的字符就按这个位置上的两个字符的比较结果确定两个字符串的大小(前面减后面)&lt;br&gt;
+同时，string (aaaa) &amp;lt;string(aaaaa)。&lt;br&gt;
+————————————&lt;/li&gt;
+&lt;li&gt;另一个功能强大的比较函数是成员函数&lt;strong&gt;compare()&lt;/strong&gt;。他支持多参数处理，支持用索引值和长度定位子串来进行比较。&lt;br&gt;
+他返回一个整数来表示比较结果，返回值意义如下：0：相等 1：大于 -1：小于 (A的ASCII码是65，a的ASCII码是97)&lt;br&gt;
+————————————&lt;br&gt;
+&lt;strong&gt;compare()原型：&lt;/strong&gt;&lt;br&gt;
+int string::compare(const basic_string&amp;amp; str) const;&lt;br&gt;
+int string::compare(size_t pos1, size_t count1, const basic_string&amp;amp; str) const;&lt;br&gt;
+int string::compare(size_t pos1, size_t count1, const basic_string&amp;amp; str, size_t pos2, size_t count2) const;&lt;br&gt;
+————————————&lt;br&gt;
+&lt;strong&gt;例子：&lt;/strong&gt;&lt;br&gt;
+std::string str1 = &amp;quot;hello&amp;quot;;&lt;br&gt;
+std::string str2 = &amp;quot;world&amp;quot;;&lt;br&gt;
+std::string str3 = &amp;quot;hello&amp;quot;;&lt;br&gt;
+// 比较整个字符串&lt;br&gt;
+if (str1.compare(str2) == 0) {&lt;br&gt;
+std::cout &amp;lt;&amp;lt; &amp;quot;str1 and str2 are equal.&amp;quot; &amp;lt;&amp;lt; std::endl;&lt;br&gt;
+} else if (str1.compare(str2) &amp;lt; 0) {&lt;br&gt;
+std::cout &amp;lt;&amp;lt; &amp;quot;str1 is less than str2.&amp;quot; &amp;lt;&amp;lt; std::endl;&lt;br&gt;
+} else {&lt;br&gt;
+std::cout &amp;lt;&amp;lt; &amp;quot;str1 is greater than str2.&amp;quot; &amp;lt;&amp;lt; std::endl;&lt;br&gt;
+}&lt;br&gt;
+// 比较部分字符串&lt;br&gt;
+if (str1.compare(0, 3, str3, 0, 3) == 0) {&lt;br&gt;
+std::cout &amp;lt;&amp;lt; &amp;quot;The first three characters of str1 and str3 are equal.&amp;quot; &amp;lt;&amp;lt; std::endl;&lt;br&gt;
+} else {&lt;br&gt;
+std::cout &amp;lt;&amp;lt; &amp;quot;The first three characters of str1 and str3 are not equal.&amp;quot; &amp;lt;&amp;lt; std::endl;&lt;br&gt;
+}&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;string的大小和容量&#34;&gt;&lt;strong&gt;string的大小和容量：&lt;/strong&gt;&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;size()和length()：返回string对象的字符个数，他们执行效果相同。&lt;br&gt;
+max_size()：返回string对象最多包含的字符数，超出会抛出length_error异常&lt;br&gt;
+capacity()：重新分配内存之前，string对象能包含的最大字符数&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;string的插入push_back-和-insert&#34;&gt;&lt;strong&gt;string的插入：push_back() 和 insert()：&lt;/strong&gt;&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;//例子&lt;br&gt;
+string s1;&lt;br&gt;
+// 尾插一个字符&lt;br&gt;
+s1.push_back(&#39;a&#39;);&lt;br&gt;
+s1.push_back(&#39;b&#39;);&lt;br&gt;
+s1.push_back(&#39;c&#39;);&lt;br&gt;
+cout&amp;lt;&amp;lt;&amp;quot;s1:&amp;quot;&amp;lt;&amp;lt;s1&amp;lt;&amp;lt;endl;     //输出 s1:abc&lt;br&gt;
+————————————&lt;br&gt;
+// insert(pos,char):在指定的位置pos前插入字符char&lt;br&gt;
+s1.insert(s1.begin(),&#39;1&#39;);&lt;br&gt;
+cout&amp;lt;&amp;lt;&amp;quot;s1:&amp;quot;&amp;lt;&amp;lt;s1&amp;lt;&amp;lt;endl; // s1:1abc&lt;br&gt;
+—————————————&lt;br&gt;
+&lt;strong&gt;insert函数原型：&lt;/strong&gt;&lt;br&gt;
+std::string&amp;amp; insert(size_t pos, const std::string&amp;amp; str);&lt;br&gt;
+std::string&amp;amp; insert(size_t pos, const std::string&amp;amp; str, size_t subpos, size_t sublen);&lt;br&gt;
+std::string&amp;amp; insert(size_t pos, const char* cstr);&lt;br&gt;
+std::string&amp;amp; insert(size_t pos, const char* cstr, size_t n);&lt;br&gt;
+std::string&amp;amp; insert(size_t pos, size_t n, char c);&lt;br&gt;
+—————————————&lt;br&gt;
+这些函数允许你在** pos **位置插入不同类型的内容：&lt;br&gt;
+● &lt;strong&gt;str&lt;/strong&gt; 表示要插入的字符串。&lt;br&gt;
+● &lt;strong&gt;subpos&lt;/strong&gt; 和 &lt;strong&gt;sublen&lt;/strong&gt; 表示要从 str 中插入的子字符串的起始位置和长度。&lt;br&gt;
+● &lt;strong&gt;cstr&lt;/strong&gt; 表示要插入的 C 风格字符串。&lt;br&gt;
+● &lt;strong&gt;n&lt;/strong&gt; 表示要插入的字符数。&lt;br&gt;
+● &lt;strong&gt;c&lt;/strong&gt; 表示要插入的字符。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;string拼接字符串append-操作符&#34;&gt;&lt;strong&gt;string拼接字符串：append() &amp;amp; + 操作符：&lt;/strong&gt;&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;// 方法一：&lt;strong&gt;append()&lt;/strong&gt;&lt;br&gt;
+string s1(&amp;quot;abc&amp;quot;);&lt;br&gt;
+s1.append(&amp;quot;def&amp;quot;);&lt;br&gt;
+cout&amp;lt;&amp;lt;&amp;quot;s1:&amp;quot;&amp;lt;&amp;lt;s1&amp;lt;&amp;lt;endl;   //输出： s1:abcdef&lt;br&gt;
+————————————&lt;br&gt;
+// 方法二：&lt;strong&gt;&amp;quot; + &amp;quot; 操作符&lt;/strong&gt;&lt;br&gt;
+string s2 = &amp;quot;abc&amp;quot;;&lt;br&gt;
+/&lt;em&gt;s2 += &amp;quot;def&amp;quot;;&lt;/em&gt;/&lt;br&gt;
+string s3 = &amp;quot;def&amp;quot;;&lt;br&gt;
+s2 += s3.c_str();&lt;br&gt;
+cout&amp;lt;&amp;lt;&amp;quot;s2:&amp;quot;&amp;lt;&amp;lt;s2&amp;lt;&amp;lt;endl;   //输出： s2:abcdef&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;string的遍历借助迭代器-或者-下标法&#34;&gt;&lt;strong&gt;string的遍历：借助迭代器 或者 下标法：&lt;/strong&gt;&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;string s1(&amp;quot;abcdef&amp;quot;); // 调用一次构造函数&lt;br&gt;
+// 方法一：&lt;strong&gt;下标法&lt;/strong&gt;&lt;br&gt;
+for( int i = 0; i &amp;lt; s1.size() ; i++ )&lt;br&gt;
+{&lt;br&gt;
+cout&amp;lt;&amp;lt;s1[i];&lt;br&gt;
+}&lt;br&gt;
+cout&amp;lt;&amp;lt;endl;&lt;br&gt;
+————————————&lt;br&gt;
+// 方法二：&lt;strong&gt;正向迭代器&lt;/strong&gt;&lt;br&gt;
+string::iterator iter = s1.begin();&lt;br&gt;
+for( ; iter &amp;lt; s1.end() ; iter++)&lt;br&gt;
+{&lt;br&gt;
+cout&amp;lt;&amp;lt;*iter;&lt;br&gt;
+}&lt;br&gt;
+cout&amp;lt;&amp;lt;endl;&lt;br&gt;
+————————————&lt;br&gt;
+// 方法三：&lt;strong&gt;反向迭代器&lt;/strong&gt;&lt;br&gt;
+string::reverse_iterator riter = s1.rbegin();&lt;br&gt;
+for( ; riter &amp;lt; s1.rend() ; riter++)&lt;br&gt;
+{&lt;br&gt;
+cout&amp;lt;&amp;lt;*riter;&lt;br&gt;
+}&lt;br&gt;
+cout&amp;lt;&amp;lt;endl;&lt;br&gt;
+}&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;string的删除：erase()&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;iterator erase(iterator p);//删除字符串中p所指的字符&lt;br&gt;
+iterator erase(iterator first, iterator last);//删除字符串中迭代器&lt;br&gt;
+区间[first,last)上所有字符&lt;br&gt;
+&lt;strong&gt;string&amp;amp; erase(size_t pos = 0, size_t len = npos);//删除字符串中从索引位置pos开始的len个字符&lt;/strong&gt;&lt;br&gt;
+void clear();//删除字符串中所有字符&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;string的字符替换：&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;string&amp;amp; replace(size_t pos, size_t n, const char &lt;em&gt;s);&lt;strong&gt;//将当前字符串从pos索引开始的n个字符，替换成字符串s&lt;/strong&gt;&lt;br&gt;
+string&amp;amp; replace(size_t pos, size_t n, size_t n1, char c); &lt;strong&gt;//将当前字符串从pos索引开始的n个字符，替换成n1个字符c&lt;/strong&gt;&lt;br&gt;
+string&amp;amp; replace(iterator i1, iterator i2, const char&lt;/em&gt; s);&lt;strong&gt;//将当前字符串[i1,i2)区间中的字符串替换为字符串s&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;//举个例子&lt;br&gt;
+string s1(&amp;quot;hello,world!&amp;quot;);&lt;br&gt;
+cout&amp;lt;&amp;lt;s1.size()&amp;lt;&amp;lt;endl;                     // 结果：12&lt;br&gt;
+s1.replace(s1.size()-1,1,1,&#39;.&#39;);           // 结果：hello,world.&lt;br&gt;
+// 这里的6表示下标  5表示长度&lt;br&gt;
+s1.replace(6,5,&amp;quot;girl&amp;quot;);                    // 结果：hello,girl.&lt;br&gt;
+// s1.begin(),s1.begin()+5 是左闭右开区间&lt;br&gt;
+s1.replace(s1.begin(),s1.begin()+5,&amp;quot;boy&amp;quot;); // 结果：boy,girl.&lt;br&gt;
+cout&amp;lt;&amp;lt;s1&amp;lt;&amp;lt;endl;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;string的大小写转换tolower和toupper函数-或者-stl中的transform算法&#34;&gt;&lt;strong&gt;string的大小写转换：tolower()和toupper()函数 或者 STL中的transform算法：&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;方法一：使用C语言之前的方法，使用函数，进行转换&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;string s = &amp;quot;ABCDEFG&amp;quot;;&lt;br&gt;
+for( int i = 0; i &amp;lt; s.size(); i++ )&lt;br&gt;
+{&lt;br&gt;
+s[i] = tolower(s[i]);&lt;br&gt;
+}&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;tolower()函数	//大写——&amp;gt;小写&lt;/strong&gt;&lt;br&gt;
+原型与功能：该函数的原型为int tolower(int c)，其功能是将输入的大写字母转换为小写字母。如果输入的不是大写字母，则原样返回该字符。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;toupper()函数	//小写——&amp;gt;大写&lt;/strong&gt;&lt;br&gt;
+原型与功能：该函数的原型为int toupper(int c)，其功能是将输入的小写字母转换为大写字母。如果输入的不是小写字母，则原样返回该字符。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;方法二：通过STL的transform算法配合的toupper和tolower来实现该功能&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;#include &lt;algorithm&gt;&lt;br&gt;
+string s = &amp;quot;ABCDEFG&amp;quot;;&lt;br&gt;
+string result;&lt;br&gt;
+transform(s.begin(),s.end(),s.begin(),::tolower);&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;transform的原型及用法&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;STL的transform算法的函数原型展示了其功能的多样性和强大的适应性。下面将详细探讨其函数原型和使用方式：&lt;br&gt;
+&lt;strong&gt;单输入容器的transform：&lt;/strong&gt;&lt;br&gt;
+**函数原型：**template &amp;lt;class InputIt, class OutputIt, class UnaryOperation&amp;gt; OutputIt transform(InputIt first1, InputIt last1, OutputIt d_first, UnaryOperation unary_op);&lt;br&gt;
+&lt;strong&gt;参数解析：&lt;/strong&gt;&lt;br&gt;
+InputIt first1：输入容器的起始迭代器（包含）。&lt;br&gt;
+InputIt last1：输入容器的终止迭代器（不包含）。&lt;br&gt;
+OutputIt d_first：输出容器的开始迭代器。&lt;br&gt;
+UnaryOperation unary_op：一元函数对象，用于对输入容器的每个元素进行操作。&lt;br&gt;
+**返回值：**该算法函数返回一个指向最后一个被写入元素之后的位置的迭代器。&lt;br&gt;
+&lt;strong&gt;双输入容器的transform：&lt;/strong&gt;&lt;br&gt;
+**函数原型：**template &amp;lt;class InputIt1, class InputIt2, class OutputIt, class BinaryOperation&amp;gt; OutputIt transform(InputIt1 first1, InputIt1 last1, InputIt2 first2, OutputIt d_first, BinaryOperation binary_op);&lt;br&gt;
+&lt;strong&gt;参数解析：&lt;/strong&gt;&lt;br&gt;
+InputIt1 first1：第一个输入容器的起始迭代器（包含）。&lt;br&gt;
+InputIt1 last1：第一个输入容器的终止迭代器（不包含）。&lt;br&gt;
+InputIt2 first2：第二个输入容器的起始迭代器（包含）。&lt;br&gt;
+OutputIt d_first：输出容器的开始迭代器。&lt;br&gt;
+BinaryOperation binary_op：二元函数对象，用于对两个输入容器的每个对应元素进行操作[1][2]。&lt;br&gt;
+**返回值：**该算法函数返回一个指向最后一个被写入元素之后的位置的迭代器。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;string的查找find&#34;&gt;&lt;strong&gt;string的查找：find：&lt;/strong&gt;&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;&lt;em&gt;size_t find (constchar&lt;/em&gt; s, size_t pos = 0) const;//在当前字符串的pos索引位置开始，查找子串s，返回找到的位置索引，-1表示查找不到子串&lt;/em&gt;*&lt;br&gt;
+size_t find (charc, size_t pos = 0) const;//在当前字符串的pos索引位置开始，查找字符c，返回找到的位置索引，-1表示查找不到字符&lt;br&gt;
+size_t rfind (constchar* s, size_t pos = npos) const;//在当前字符串的pos索引位置开始，反向查找子串s，返回找到的位置索引，-1表示查找不到子串&lt;br&gt;
+size_t rfind (charc, size_t pos = npos) const;//在当前字符串的pos索引位置开始，反向查找字符c，返回找到的位置索引，-1表示查找不到字符&lt;br&gt;
+size_tfind_first_of (const char* s, size_t pos = 0) const;//在当前字符串的pos索引位置开始，查找子串s的字符，返回找到的位置索引，-1表示查找不到字符&lt;br&gt;
+size_tfind_first_not_of (const char* s, size_t pos = 0) const;//在当前字符串的pos索引位置开始，查找第一个不位于子串s的字符，返回找到的位置索引，-1表示查找不到字符&lt;br&gt;
+size_t find_last_of(const char* s, size_t pos = npos) const;//在当前字符串的pos索引位置开始，查找最后一个位于子串s的字符，返回找到的位置索引，-1表示查找不到字符&lt;br&gt;
+size_tfind_last_not_of (const char* s, size_t pos = npos) const;//在当前字符串的pos索引位置开始，查找最后一个不位于子串s的字符，返回找到的位置索引，-1表示查找不到子串&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;例子：&lt;/strong&gt;&lt;br&gt;
+string s(&amp;quot;dog bird chicken bird cat&amp;quot;);&lt;br&gt;
+//字符串查找-----找到后返回首字母在字符串中的下标&lt;br&gt;
+// 1. 查找一个字符串&lt;br&gt;
+cout &amp;lt;&amp;lt; s.find(&amp;quot;chicken&amp;quot;) &amp;lt;&amp;lt; endl;        // 结果是：9&lt;br&gt;
+// 2. 从下标为6开始找字符&#39;i&#39;，返回找到的第一个i的下标&lt;br&gt;
+cout &amp;lt;&amp;lt; s.find(&#39;i&#39;,6) &amp;lt;&amp;lt; endl;            // 结果是：11&lt;br&gt;
+// 3. 从字符串的末尾开始查找字符串，返回的还是首字母在字符串中的下标&lt;br&gt;
+cout &amp;lt;&amp;lt; s.rfind(&amp;quot;chicken&amp;quot;) &amp;lt;&amp;lt; endl;       // 结果是：9&lt;br&gt;
+// 4. 从字符串的末尾开始查找字符&lt;br&gt;
+cout &amp;lt;&amp;lt; s.rfind(&#39;i&#39;) &amp;lt;&amp;lt; endl;             // 结果是：18-------因为是从末尾开始查找，所以返回第一次找到的字符&lt;br&gt;
+// 5. 在该字符串中查找第一个属于字符串s的字符&lt;br&gt;
+cout &amp;lt;&amp;lt; s.find_first_of(&amp;quot;13br98&amp;quot;) &amp;lt;&amp;lt; endl;  // 结果是：4---b&lt;br&gt;
+// 6. 在该字符串中查找第一个不属于字符串s的字符------先匹配dog，然后bird匹配不到，所以打印4&lt;br&gt;
+cout &amp;lt;&amp;lt; s.find_first_not_of(&amp;quot;hello dog 2006&amp;quot;) &amp;lt;&amp;lt; endl; // 结果是：4&lt;br&gt;
+cout &amp;lt;&amp;lt; s.find_first_not_of(&amp;quot;dog bird 2006&amp;quot;) &amp;lt;&amp;lt; endl;  // 结果是：9&lt;br&gt;
+// 7. 在该字符串最后中查找第一个属于字符串s的字符&lt;br&gt;
+cout &amp;lt;&amp;lt; s.find_last_of(&amp;quot;13r98&amp;quot;) &amp;lt;&amp;lt; endl;               // 结果是：19&lt;br&gt;
+// 8. 在该字符串最后中查找第一个不属于字符串s的字符------先匹配t--a---c，然后空格匹配不到，所以打印21&lt;br&gt;
+cout &amp;lt;&amp;lt; s.find_last_not_of(&amp;quot;teac&amp;quot;) &amp;lt;&amp;lt; endl;            // 结果是：21&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;string的排序sortsbeginsend&#34;&gt;&lt;strong&gt;string的排序：sort(s.begin(),s.end())&lt;/strong&gt;&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;string s = &amp;quot;cdefba&amp;quot;;&lt;br&gt;
+sort(s.begin(),s.end());&lt;br&gt;
+cout&amp;lt;&amp;lt;&amp;quot;s:&amp;quot;&amp;lt;&amp;lt;s&amp;lt;&amp;lt;endl;     // 结果：abcdef&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;string的分割截取字符串strtok-substr&#34;&gt;&lt;strong&gt;string的分割/截取字符串：strtok() &amp;amp; substr()&lt;/strong&gt;&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;strtok:&lt;/strong&gt;&lt;br&gt;
+char str[] = &amp;quot;I,am,a,student; hello world!&amp;quot;;&lt;br&gt;
+const char *split = &amp;quot;,; !&amp;quot;;&lt;br&gt;
+char *p2 = strtok(str,split);&lt;br&gt;
+while( p2 != NULL )&lt;br&gt;
+{&lt;br&gt;
+cout&amp;lt;&amp;lt;p2&amp;lt;&amp;lt;endl;&lt;br&gt;
+p2 = strtok(NULL,split);&lt;br&gt;
+}&lt;br&gt;
+&lt;strong&gt;substr();&lt;/strong&gt;&lt;br&gt;
+函数原型：&lt;br&gt;
+std::string substr(size_t pos = 0, size_t count = npos) const;&lt;br&gt;
+//const表示不会修改原始字符串&lt;br&gt;
+参数：&lt;br&gt;
+● pos：子串开始的位置（默认为 0）。&lt;br&gt;
+● count：子串的长度（默认为 npos，表示直到字符串末尾）。&lt;br&gt;
+返回值：&lt;br&gt;
+● 返回一个新的字符串，包含从 pos 开始的 count 个字符。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;string s1(&amp;quot;0123456789&amp;quot;);&lt;br&gt;
+string s2 = s1.substr(2,5); // 结果：23456-----参数5表示：截取的字符串的长度&lt;br&gt;
+cout&amp;lt;&amp;lt;s2&amp;lt;&amp;lt;endl;&lt;/p&gt;
+&lt;/blockquote&gt;
+">string类</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://userwkx.github.io/post/zhan-yi-chu/"" data-c="
+          &lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;堆栈溢出&lt;/strong&gt;（英语：stack overflow）在计算机科学中是指使用过多的存储器时导致调用堆栈产生的溢》出，也是缓冲区溢出中的一种。堆栈溢出的产生是由于过多的函数调用，导致使用的调用堆栈大小超过事先规划的大小，覆盖其他存储器内的资料，一般在递归中产生。堆栈溢出很可能由无限递归（Infiniterecursion）产生，但也可能仅仅是过多的堆栈层级。堆栈溢出在內核设计中尤其危险，因此很多入门內核设计教程建议用户不要尝试使用递归程序；而是基于安全和性能考量，改用循环处理问题。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;数组开的过大，和无限递归是栈溢出的常见原因。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;栈和堆内存都是对内存的一种说法，栈内存就是这块内存的使用方法遵循先进后出的原则。&lt;br&gt;
+例如，在经典的 32 位环境下，程序可以使用的内存为 4GB，Linux 会按照下图进行分区。&lt;br&gt;
+&lt;img src=&#34;https://userwkx.github.io/post-images/1721530682352.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+② 区域主要是全局数据区，常量区，程序代码区，他们在程序运行期间会一直存在，直到程序销毁才能被释放；&lt;br&gt;
+既然聊堆栈问题，那我们来看 看①区域，①区域有个分段叫作栈，他只有发生函数调用的时候才会被使用。函数被调用的时候，有很多数据需要暂时压入栈中，也就是存储到栈中，包括：&lt;br&gt;
+● 我们在代码中定义的数据，比如&lt;strong&gt;实参、局部变量、局部数组、局部对象、返回值&lt;/strong&gt;等，我们可以称它们为局部数据；&lt;br&gt;
+● 还有我们在代码中看不到的数据，比如&lt;strong&gt;函数的返回地址、一系列寄存器的值&lt;/strong&gt;等，这些都是函数调用所需要的隐藏数据（编译器分配，程序员无法干涉）。&lt;/p&gt;
+&lt;p&gt;调用开始时，先调用的函数先入栈，后调用的函数后入栈；调用结束时，后调用的函数先出栈，先调用的函数后出栈。&lt;/p&gt;
+&lt;p&gt;一个线程拥有一个栈，栈中的数据是被当前线程独占的，其它线程不能访问。为了保证可以同时运行多个线程，比如几十个，或者成百上千个，编译器不会给单一线程分配太多的栈内存，一般也就 1MB~8MB。&lt;br&gt;
+栈内存的大小在编译时就已经确定了，程序在运行期间不能改变，所以如果程序使用的栈内存超出最大值，就会发生栈溢出（Stack Overflow）错误。&lt;/p&gt;
+&lt;p&gt;一般情况下，栈内存都是够用的，但是如果遇到以下两种情况，栈内存就会捉襟见肘：&lt;br&gt;
+● &lt;strong&gt;在函数内部定义了大规模的数据，比如定义了一个很大的数组；&lt;/strong&gt;&lt;br&gt;
+● &lt;strong&gt;函数调用层次太深，导致栈帧持续堆积，比如函数的嵌套调用。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;栈溢出是一种致命错误，发生栈溢出错误以后，我们的程序就没法再继续运行了，你只能关闭它，没有其它的挽救措施。&lt;/p&gt;
+">栈溢出</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://userwkx.github.io/post/pai-xu-zong-jie/"" data-c="
+          &lt;p&gt;常用的主要就是&lt;strong&gt;比较排序&lt;/strong&gt;和&lt;strong&gt;桶排序&lt;/strong&gt;；&lt;/p&gt;
+&lt;h2 id=&#34;比较排序&#34;&gt;&lt;strong&gt;比较排序：&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;比较排序可以直接调用C++ STL的sort函数，当传入的是向量（动态数组）&lt;code&gt;vector&amp;lt;int&amp;gt; vec&lt;/code&gt;时：&lt;code&gt;sort(vec.begin(),vec.end());&lt;/code&gt;当传入的是普通数组&lt;code&gt;a[n&lt;/code&gt;]时：&lt;code&gt;sort(a,a+n);&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;sort(first_pointer,first_pointer+n,cmp)&lt;/code&gt;&lt;br&gt;
+该函数可以给数组，或者链表list、向量排序。&lt;/p&gt;
+&lt;p&gt;原理：sort并不是简单的快速排序，它对快速排序进行了优化。此外，它还结合了插入排序和推排序。系统会根据数据形式和数据量自动选择合适的排序方法。它每次排序中不只选择一种方法，比如给一个数据量较大的数组排序，开始采用快速排序，分段递归，分段之后每一段的数据量达到一个较小值后它就不继续往下递归，而是选择插入排序，如果递归的太深，他会选择推排序。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;cmp：默认可以不填，如果不填sort会默认按数组升序排序。可以自定义一个排序函数，改排序方式为降序。&lt;/strong&gt;&lt;br&gt;
+用此函数需先包含&lt;strong&gt;头文件&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;#include &lt;code&gt;&amp;lt;algorithm&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;sort不只是能像上面那样简单的使用，我们可以对sort进行扩展，关键就在于第三个参数&amp;lt;cmp比较函数&amp;gt;。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;方法一：定义比较函数（最常用）&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;//情况一：数组排列
+int A[100];
+bool cmp1(int a,int b)//int为数组数据类型
+{
+  return a&amp;gt;b;//降序排列
+  //return a&amp;lt;b;//默认的升序排列
+}
+sort(A,A+100,cmp1);
+
+//情况二：结构体排序
+Student Stu[100];
+bool cmp2(Student a,Student b)
+{
+  return a.id&amp;gt;b.id;	//按照学号降序排列
+}
+sort(Stu,Stu+100,cmp2);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;刷题时遇到了一题，通过自己定义cmp函数来实现&lt;strong&gt;很长很长的数字来比较大小&lt;/strong&gt;即一行只含数字的字符串按数字比较大小的方式来进行比较。代码：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;bool cmp(const pres &amp;amp;a,const pres &amp;amp;b)
+{
+    if(a.ticket.size()&amp;gt;b.ticket.size()) 
+    {
+        return true;
+    }
+    else if(a.ticket.size()==b.ticket.size())
+    {
+        for(int i=0;;i++)
+        {
+            if(a.ticket[i]&amp;gt;b.ticket[i])
+                return true;
+            else if(a.ticket[i]&amp;lt;b.ticket[i])
+                return false; 
+        } 
+    }
+    else 
+    {
+        return false;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;方法二：使用标准库函数&lt;/strong&gt;&lt;br&gt;
+functional提供了一堆基于模板的比较函数对象：&lt;code&gt;equal_to、not_equal_to、greater、greater_equal、less、less_equal&lt;/code&gt;。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;● 升序：sort(begin,end,less())
+● 降序：sort(begin,end,greater())
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;缺点：也只是实现简单的排序，结构体不适用。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;方法三：重载（此处略）&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;桶排序&#34;&gt;&lt;strong&gt;桶排序：&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;桶排序（Bucket Sort）又称箱排序，是一种比较常用的排序算法。其算法原理是将数组分到有限数量的桶里，再对每个桶分别排好序（可以是递归使用桶排序，也可以是使用其他排序算法将每个桶分别排好序），最后一次将每个桶中排好序的数输出。&lt;br&gt;
+具体实现：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;void bucket_sort(vector&amp;lt;int&amp;gt; &amp;amp;vec,int MAX)
+{
+    vector&amp;lt;int&amp;gt; new_vec(MAX+1);
+    for(int i=0;i&amp;lt;vec.size();i++)
+    {
+        new_vec[vec[i]]++;
+    }
+    int k=0;
+    for(int i=0;i&amp;lt;=MAX;i++)
+    {
+        while(new_vec[i]--&amp;gt;0)
+        {
+            vec[k]=i;
+            k++;
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;int main()
+{
+    int n;
+    cin&amp;gt;&amp;gt;n;
+    vector&amp;lt;int&amp;gt; vec(n);
+    int MAX;
+    for(int i=0;i&amp;lt;n;i++)
+    {
+        cin&amp;gt;&amp;gt;vec[i];
+        MAX=max(MAX,vec[i]);
+    }
+    bucket_sort(vec,MAX);
+    for(int i=0;i&amp;lt;n;i++)
+    {
+        cout&amp;lt;&amp;lt;vec[i]&amp;lt;&amp;lt;&amp;quot; &amp;quot;;
+    }
+    return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;补充&#34;&gt;&lt;strong&gt;补充：&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;一些比较排序的实现方法：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;快速排序&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;主要思路：&lt;br&gt;
+对于多个数-----&amp;gt;4	5	2	3	9	7	1	6	5&lt;br&gt;
+&lt;img src=&#34;https://userwkx.github.io/post-images/1721455423658.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;//快速排序
+//严蔚敏《数据结构》标准分割函数
+int Paritition1(int A[], int low, int high) {
+    int pivot = A[low];  //支点
+    while (low &amp;lt; high) {
+        while (low &amp;lt; high &amp;amp;&amp;amp; A[high] &amp;gt;= pivot) {
+            --high;
+        }
+        A[low] = A[high];
+        while (low &amp;lt; high &amp;amp;&amp;amp; A[low] &amp;lt;= pivot) {
+            ++low;
+        }
+        A[high] = A[low];
+    }
+    A[low] = pivot;
+    return low;
+}
+
+void QuickSort(int A[], int low, int high) //快排母函数
+{
+    if (low &amp;lt; high) {
+        int pivot = Paritition1(A, low, high);
+        QuickSort(A, low, pivot - 1);
+        QuickSort(A, pivot + 1, high);
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;下面是稍微修了的版本 I&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;void quick_sort(vector&amp;lt;int&amp;gt; &amp;amp;A,int low,int high) {
+    int i = low, j = high, pivot = A[low];I
+    if (low &amp;lt; high) {
+
+        while (i &amp;lt; j) {
+            while (i &amp;lt; j &amp;amp;&amp;amp; A[j] &amp;gt;= pivot) {   //若想从大向小排，可将&amp;gt;=改为&amp;lt;=
+                j--;
+            }
+            A[i] = A[j];
+            while (i &amp;lt; j &amp;amp;&amp;amp; A[i] &amp;lt;= pivot) {
+                i++;
+            }
+            A[j] = A[i];
+        }
+        A[i] = pivot;
+        quick_sort(A, low, i - 1);
+        quick_sort(A, i + 1, high);
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;版本 II&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;void quick_sort(vector&amp;lt;int&amp;gt; &amp;amp;A,int low,int high) {
+    int i = low, j = high, pivot = A[low];
+    if (low &amp;lt; high) {
+
+        while (i &amp;lt; j) {
+            while (i &amp;lt; j &amp;amp;&amp;amp; A[j] &amp;gt;= pivot) {   //若想从大向小排，可将&amp;gt;=改为&amp;lt;=
+                j--;
+            }
+            while (i &amp;lt; j &amp;amp;&amp;amp; A[i] &amp;lt;= pivot) {
+                i++;
+            }
+            if(i&amp;lt;j)
+            {
+              swap(A[i],A[j]);
+            }
+        }
+        swap(A[low],A[j]);
+        quick_sort(A, low, i - 1);
+        quick_sort(A, i + 1, high);
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;冒泡排序&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;冒泡排序比较简单，主要思路：&lt;br&gt;
+对于多个数--&amp;gt;	5	7	9	6	3	1	5&lt;br&gt;
+i表示循环遍历的次数，每遍历一次会把最大的数送到最右边，j负责交换。&lt;br&gt;
+下面这题本质就是一个冒泡排序：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;在一个旧式的火车站旁边有一座桥，其桥面可以绕河中心的桥墩水平旋转。一个车站的职工发现桥的长度最多
+能容纳两节车厢，如果将桥旋转 180 度，则可以把相邻两节车厢的位置交换，用这种方法可以重新排列车
+厢的顺序。于是他就负责用这座桥将进站的车厢按车厢号从小到大排列。他退休后，火车站决定将这一工作自
+动化，其中一项重要的工作是编一个程序，输入初始的车厢顺序，计算最少用多少步就能将车厢排序。
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;接下来看他的实现代码：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;void bubble_sort(vector&amp;lt;int&amp;gt; &amp;amp;A)
+{
+    for(int i=0;i&amp;lt;A.size()-1;i++)
+    {
+        for(int j=0;j&amp;lt;A.size()-i-1;j++)
+        {
+            if(A[j]&amp;gt;A[j+1])
+                swap(A[j],A[j+1]);
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;选择排序&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;选择排序也比较简单，主要思路：&lt;br&gt;
+对于多个数--&amp;gt;	5	7	9	6	3	1	5&lt;br&gt;
+先拿出一个“5”，然后遍历，找比“5”小的，然后进行交换。&lt;br&gt;
+因为最后一个数没必要再拿出来了，所以外层循环到A.size()-1，内层要比较到最后一位，所以内层循环到A.size()。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;void selection_sort(vector&amp;lt;int&amp;gt; &amp;amp;A)
+{
+    for(int i=0;i&amp;lt;A.size()-1;i++)
+    {
+        for(int j=i+1;j&amp;lt;A.size();j++)
+        {
+            if(A[i]&amp;lt;A[j])
+            {
+                swap(A[i],A[j]);
+            }
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;本来想改动一下，提高运行效率，结果改了个2B写法，想了想还是保留下来吧&lt;sup&gt;~&lt;/sup&gt;。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;void selection_sort(vector&amp;lt;int&amp;gt; &amp;amp;A)
+{
+    for(int i=0;i&amp;lt;A.size()-1;i++)
+    {
+        int k=0;
+        int tmp=A[i];
+        for(int j=i+1;j&amp;lt;A.size();j++)
+        {
+            if(tmp&amp;gt;=A[j])
+            {
+                tmp=A[j];
+                k=j;
+            }
+            else
+            {
+                k=i;
+            }
+        }
+        swap(A[i],A[k]);
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+">排序总结</a>
+      </div>
+      
+    </div>
+    <div class="page">
+      <div id="page_ul"></div>
+    </div>
+  </div>
+</div>
+<script>
+  !function () {
+    let searchMask = document.querySelector('#search_mask');
+    let result = document.querySelector('#result');
+    let items = document.querySelectorAll('.item');
+    let searchBox = document.querySelector('#search');
+    let statCount = document.querySelector('#stat_count');
+    let statTimes = document.querySelector('#stat_times');
+    let pageUl = document.querySelector('#page_ul');
+    let close = document.querySelector('#close');
+    
+    close.addEventListener('click', function() {
+      searchMask.style = 'display: none;'
+    })
+
+    let finds = [];
+    let contents = [];
+    let pageSize = 10;
+    items.forEach(item => {
+      let a = item.querySelector('a');
+      contents.push({
+        title: a.innerText,
+        details: a.dataset.c,
+        link: a.href
+      })
+      item.remove();
+    })
+
+    function insertStr(soure, start, count) {
+      let newStr = soure.substr(start, count);
+      return soure.slice(0, start) + '<em>' + newStr + '</em>' + soure.slice(start + count);
+    }
+
+    pageUl.addEventListener('click', function(event) {
+      let target = event.target;
+      if (target.__proto__ === HTMLSpanElement.prototype) {
+        appendResults(parseInt(target.dataset.i));
+      }
+    })
+
+    function appendResults(index) {
+      let htmlResult = '';
+      let start = index || 0;
+      let end = Math.min(start + pageSize, finds.length);
+      for (let i = start; i < end; i++) {
+        const current = finds[i];
+        let html = current.title;
+        let sum = 0;
+        let positions = current.positions;
+        positions.forEach(position => {
+          html = insertStr(html, position.start + sum, position.count);
+          sum += 9;
+        })
+        htmlResult += `<div class="item"><a class="result-title" href="${current.link}">${html}</a></div>`;
+      }
+      result.innerHTML = htmlResult;
+      pageUl.innerHTML = '';
+      let count = finds.length / pageSize;
+      let lis = '';
+      if (start !== 0) {
+        lis += `<span class="fa fa-angle-left" data-i='${start - 1}'></span>`;
+      }
+      for (let i = 0; i < count; i++) {
+        lis += `<span class='${i === start?'current':''}' data-i='${i}'>${i+1}</span>`;     
+      }
+      if (start+1 < count) {
+        lis += `<span class="fa fa-angle-right" data-i='${start+1}'></span>`;  
+      }
+      pageUl.innerHTML = lis;
+    }
+
+    function search(delay) {
+      let timer = null
+      return function () {
+        clearTimeout(timer)
+        timer = setTimeout(() => {
+          let start = Date.now();
+          let segments = searchBox.value.split(' ').filter(c => c != '');
+          if (segments.length <= 0) {
+            return;
+          }
+          finds = [];
+          let htmlResult = '';
+          contents.forEach(content => {
+            let title = content.title;
+            let positions = [];
+            let find = false;
+            segments.forEach((segment) => {
+              if (content.title.includes(segment)) {
+                find = true;
+                positions.push({
+                  start: content.title.indexOf(segment),
+                  count: segment.length
+                })
+              } else if (content.details.includes(segment)) {
+                find = true;
+              }
+            });
+            if (find) {
+              finds.push({
+                title: content.title,
+                link: content.link,
+                positions
+              });
+            }
+          })
+          appendResults(0);
+          statCount.textContent = finds.length;
+          statTimes.textContent = Date.now() - start;
+        }, delay)
+      }
+    }
+    searchBox.addEventListener('input', search(200));
+  }()
+</script>
+
+<input hidden id="copy" />
+<script>
+  !function () {
+    let times = document.querySelectorAll('.publish-time');
+    for (let i = 0; i < times.length; i++) {
+      let date = times[i].dataset.t;
+      let time = Math.floor((new Date().getTime() - new Date(date).getTime()) / 1000);
+      if (time < 60) {
+        str = time + '秒之前';
+      } else if (time < 3600) {
+        str = Math.floor(time / 60) + '分钟之前';
+      } else if (time >= 3600 && time < 86400) {
+        str = Math.floor(time / 3600) + '小时之前';
+      } else if (time >= 86400 && time < 259200) {
+        str = Math.floor(time / 86400) + '天之前';
+      } else {
+        str = times[i].textContent;
+      }
+      times[i].textContent = str;
+    }
+  }();
+</script>
+
+<script>
+  let language = '';
+  if (language !== '') {
+    let map = new Map();
+    if (language === 'en') {
+      map.set('search', 'Search');
+      map.set('category', 'Categories');
+      map.set('article', 'Articles');
+      map.set('tag', 'Tags');
+      map.set('top', 'Top');
+      map.set('publish', 'published');
+      map.set('minute', ' minutes');
+      map.set('read-more', 'Read More');
+      map.set('view', 'View');
+      map.set('words', ' words');
+      map.set('category-in', 'category in');
+      map.set('preview', 'Meta');
+      map.set('index', 'Toc');
+      map.set('no-archives', "You haven't created yet");
+      map.set('archives', " articles in total");
+      map.set('cloud-tags', " tags in total");
+      map.set('copyright', "Copyright: ");
+      map.set('author', "Author: ");
+      map.set('link', "Link: ");
+      map.set('leave-message', "Leave a message");
+      map.set('format', "Links Format");
+      map.set('site-name', "Name: ");
+      map.set('site-link', "Link: ");
+      map.set('site-desc', "Desc: ");
+      map.set('stat', " related results, taking ");
+      map.set('stat-time', " ms");
+      map.set('site-img', "Image: ");
+    }
+
+    if (map.size > 0) {
+      let lanElems = document.querySelectorAll('.language');
+      lanElems.forEach(elem => {
+        let lan = elem.dataset.lan, text = map.get(lan);
+        if (elem.__proto__ === HTMLInputElement.prototype) {
+          elem.placeholder = text
+        } else {
+          if (elem.dataset.count) {
+            text = elem.dataset.count + text;
+          }
+          elem.textContent = text;
+        }
+      })
+    }
+  }
+
+  window.Clipboard = (function (window, document, navigator) {
+    var textArea,
+      copy;
+
+    // 判断是不是ios端
+    function isOS() {
+      return navigator.userAgent.match(/ipad|iphone/i);
+    }
+    //创建文本元素
+    function createTextArea(text) {
+      textArea = document.createElement('textArea');
+      textArea.value = text;
+      textArea.style.width = 0;
+      textArea.style.height = 0;
+      textArea.clientHeight = 0;
+      textArea.clientWidth = 0;
+      document.body.appendChild(textArea);
+    }
+    //选择内容
+    function selectText() {
+      var range,
+        selection;
+
+      if (isOS()) {
+        range = document.createRange();
+        range.selectNodeContents(textArea);
+        selection = window.getSelection();
+        selection.removeAllRanges();
+        selection.addRange(range);
+        textArea.setSelectionRange(0, 999999);
+      } else {
+        textArea.select();
+      }
+    }
+
+    //复制到剪贴板
+    function copyToClipboard() {
+      try {
+        document.execCommand("Copy")
+      } catch (err) {
+        alert("复制错误！请手动复制！")
+      }
+      document.body.removeChild(textArea);
+    }
+
+    copy = function (text) {
+      createTextArea(text);
+      selectText();
+      copyToClipboard();
+    };
+
+    return {
+      copy: copy
+    };
+  })(window, document, navigator);
+
+  function copyCode(e) {
+    if (e.srcElement.tagName === 'SPAN' && e.srcElement.classList.contains('copy-code')) {
+      let code = e.currentTarget.querySelector('code');
+      var text = code.innerText;
+      if (e.srcElement.textContent === '复制成功') {
+        return;
+      }
+      e.srcElement.textContent = '复制成功';
+      (function (elem) {
+        setTimeout(() => {
+          if (elem.textContent === '复制成功') {
+            elem.textContent = '复制代码'
+          }
+        }, 1000);
+      })(e.srcElement)
+      Clipboard.copy(text);
+    }
+  }
+
+  let pres = document.querySelectorAll('pre');
+  pres.forEach(pre => {
+    let code = pre.querySelector('code');
+    let copyElem = document.createElement('span');
+    copyElem.classList.add('copy-code');
+    copyElem.textContent = '复制代码';
+    pre.appendChild(copyElem);
+    pre.onclick = copyCode
+  })
+
+</script>
+<script src="/media/js/motion.js"></script>
+
+
+  <script
+    src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+  <script>
+    var scroll = new SmoothScroll('a[href*="#"]', {
+      speed: 200
+    });
+  </script>
+
+
+
+
+  <script src="/media/js/cool.js"></script>
+
+
+
+  <div class="snow-container"></div>
+  <script color="0,205,205" pointer-events="auto" zIndex="-1" opacity='0.7' count="99" src="/media/js/bg/canvas-nest.js"></script>
+
+
+</html>
